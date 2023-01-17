@@ -15,6 +15,7 @@ class UsersServices {
       throw error
     }
   }
+
   static async getById(id) {
     try {
       const result = await Users.findByPk(id)

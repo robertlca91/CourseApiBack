@@ -28,8 +28,9 @@ class coursesService {
           {
             model: Categories,
             as: 'courseone',
+            attributes: ['name'],
           },
-          { model: Videos, as: 'courstwo' },
+          { model: Videos, as: 'courstwo', attributes: ['title', 'url'] },
         ],
       })
       return result
